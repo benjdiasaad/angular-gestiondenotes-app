@@ -1,0 +1,23 @@
+{
+  "productList": [
+    {
+      "productName": "Samsung",
+      "category": "Vegetables",
+      "freshness": "Second Hand",
+      "price": 100,
+      "comment": "OK",
+      "date": "2022-03-18T23:00:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

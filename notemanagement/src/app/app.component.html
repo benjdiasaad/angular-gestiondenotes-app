@@ -13,16 +13,16 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
-      <img class="avatar mat-elevation-z8" src="../assets/image/angular_saad.jpg" />
+      <img class="avatar mat-elevation-z8" src="" />
 
-      <h4 class="name">Benjdia Saad</h4>
-      <p class="designation">Software Engineer</p>
+      <h4 class="name">Jhon</h4>
+      <p class="designation">Administateur</p>
 
       <mat-divider></mat-divider>
 
       <button mat-button class="menu-button">
-          <mat-icon>home</mat-icon>
-          <span>Home</span>
+          <mat-icon></mat-icon>
+          <span routerLink="module">Module</span>
       </button>
       <button mat-button class="menu-button">
           <mat-icon>person</mat-icon>
@@ -42,8 +42,8 @@
 
   </mat-sidenav>
   <mat-sidenav-content>
-      <div class="content mat-elevation-z8">
-          Main content here!
+      <div class="">
+        <router-outlet></router-outlet>
       </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
