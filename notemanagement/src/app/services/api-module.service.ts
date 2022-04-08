@@ -20,7 +20,7 @@ export class ApiModuleService {
     return this.http.put<any>("http://localhost:3000/moduleList/"+id, data);
   }
 
-  deleteProduct(id: number){
+  supprimerModule(id: number){
     return this.http.delete<any>("http://localhost:3000/moduleList/"+id);
   }
 }

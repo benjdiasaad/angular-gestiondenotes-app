@@ -21,10 +21,10 @@
         <ng-container matColumnDef="Action">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
           <td mat-cell *matCellDef="let row">  
-            <button mat-icon-button (click)="ModifierModule(row)" color="primary">
+            <button mat-icon-button (click)="modifierModule(row)" color="primary">
               <mat-icon>edit</mat-icon>
             </button>
-            <button mat-icon-button (click)="deleteProduct(row.id)" color="warn">
+            <button mat-icon-button (click)="supprimerModule(row.id)" color="warn">
               <mat-icon>delete</mat-icon>
             </button>
           </td>

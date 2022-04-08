@@ -53,7 +53,7 @@ export class ModuleComponent implements OnInit {
   }
 
   //this is just call our module dialog and change the value of the button to update
-  ModifierModule(row: any){
+  modifierModule(row: any){
     this.dialog.open(ModuleDialogComponent, {
       width:'30%',
       data:row
@@ -64,6 +64,20 @@ export class ModuleComponent implements OnInit {
     })
   }
 
+  supprimerModule(id:number){
+    this.api.supprimerModule(id)
+    .subscribe({
+      next:(res)=>{
+        alert("Module supprimer avec succes");
+        this.getAllModule();
+      },
+      error:()=>{
+        alert("Error de supprission");
+      }
+    })
+  }
+
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
@@ -72,6 +86,8 @@ export class ModuleComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+
 
 
 
