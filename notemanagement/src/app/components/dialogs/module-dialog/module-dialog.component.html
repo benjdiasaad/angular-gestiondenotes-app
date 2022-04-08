@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Ajouter Module</h1>
+
+<div  mat-dialog-content>
+    <form [formGroup]="moduleForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Module</mat-label>
+            <input matInput placeholder="Nom" formControlName="nomModule">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="addProduct()">{{ actionBtn }}</button>
+
+</div>
+
+
+

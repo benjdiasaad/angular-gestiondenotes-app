@@ -8,19 +8,19 @@ export class ApiModuleService {
 
   constructor(private http: HttpClient) { }
 
-  postProduct(data: any){
-    return this.http.post<any>("http://localhost:3000/productList", data);
+  postModule(data: any){
+    return this.http.post<any>("http://localhost:3000/moduleList", data);
   }
 
-  getProduct(){
-    return this.http.get<any>("http://localhost:3000/productList");
+  getModule(){
+    return this.http.get<any>("http://localhost:3000/moduleList");
   }
 
-  putProduct(data: any, id: number){
-    return this.http.put<any>("http://localhost:3000/productList/"+id, data);
+  putModule(data: any, id: number){
+    return this.http.put<any>("http://localhost:3000/moduleList/"+id, data);
   }
 
   deleteProduct(id: number){
-    return this.http.delete<any>("http://localhost:3000/productList/"+id);
+    return this.http.delete<any>("http://localhost:3000/moduleList/"+id);
   }
 }

@@ -1,13 +1,16 @@
 {
-  "productList": [
+  "moduleList": [
     {
-      "productName": "Samsung",
-      "category": "Vegetables",
-      "freshness": "Second Hand",
-      "price": 100,
-      "comment": "OK",
-      "date": "2022-03-18T23:00:00.000Z",
+      "nomModule": "Big Data",
+      "id": 1
+    },
+    {
+      "nomModule": "Spring Boot",
       "id": 2
+    },
+    {
+      "nomModule": "Math",
+      "id": 3
     }
   ],
   "comments": [
